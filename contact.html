@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="author" content="Yamuna Rao">
+    <meta name="description" content="Yamuna Rao's Contact Page">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <script>
+
+        function clarification() {
+            let name = document.getElementById("name").value;
+            alert("Congrats " + name + ", you sent an email to Yamuna! This will redirect you back to the home page.")
+            window.open("index.html");
+        }
+    </script>
+
+    <h1 id="contact-title">Contact Me</h1>
+
+    <div>
+        <a href="https://www.linkedin.com/in/yamuna-rao-b186921b3" target="_blank"><img class="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt="LinkedIn"></a>
+        <a href="https://tinyurl.com/yew2ekdz" target="_blank"><img class="gmail" src="https://www.gstatic.com/images/branding/product/1x/hh_gmail_64dp.png" alt="Gmail"></a>
+        <a href="https://www.instagram.com/yamuna._.rao/" target="_blank"><img class="insta" src="https://toppng.com/uploads/preview/instagram-logo-circle-11549679754rhbcorxntv.png" alt="Instagram"></a>
+    </div>
+
+    <hr>
+
+    <div class="contact-form">
+        <form>
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="email">
+            <br>
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <input type="text" id="message">
+            <br>
+            <br>
+            <input type="submit" id="submit" onclick="clarification()">
+        </form>
+    </div>
+
+</body>
+</html>
